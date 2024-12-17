@@ -63,8 +63,8 @@ func NewNotFoundError(message string) *RestErr {
 func NewUnprocessableEntityError(message string) *RestErr {
 	return &RestErr{
 		Message: message,
-		Err: "unprocessable_entity",
-		Code: http.StatusUnprocessableEntity,
-		Causes: nil,
+		Err:     "unprocessable_entity",
+		Code:    http.StatusUnprocessableEntity,
+		Causes:  nil,
 	}
 }
